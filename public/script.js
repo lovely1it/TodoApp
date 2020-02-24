@@ -1,4 +1,5 @@
 
+//function to get all todos
 $(document).ready(async function(){
     const todos = await $.getJSON('/todos/api')
     console.log(todos)
@@ -33,6 +34,7 @@ function showTodo (todo){
     elem.data('isCompleted', todo.isCompleted)
 }
 
+//function to delete a todo
 async function updateTodo(elem){
     const updatedTodo = await $.ajax({
         type :'PUT',
@@ -42,6 +44,7 @@ async function updateTodo(elem){
     elem.toggleClass('completed')
 }
 
+//function to delete a todo
 async function removeTodo(elem){
     const deletedTodo = await $.ajax({
         type :'DELETE',
@@ -50,6 +53,7 @@ async function removeTodo(elem){
     elem.remove();
 }
 
+// function to create a Todo
 async function createTodo(){
     const userInput = $('#inputField').val();
     const createdTodo = await $.post('/todos/api', {text: userInput})

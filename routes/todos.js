@@ -3,11 +3,13 @@ const Router = express.Router();
 const mongoose = require('mongoose');
 const Todo = require('./../models/todo')
 
+//To get all Todos
 Router.get('/api', async (req, res) =>{
     let todos = await Todo.find({});
     res.send(todos);
  });
  
+ //Create a new Todo Task
  Router.post('/api', async (req, res) => {
      const { text } = req.body;
      const todo = new Todo({ text});
@@ -19,6 +21,7 @@ Router.get('/api', async (req, res) =>{
      }
  });
  
+ //Update a Todo task
  Router.put('/api/:id', async (req, res) =>{
      const todo = await Todo.findById( req.params.id );
      for( key in req.body ){
@@ -34,6 +37,7 @@ Router.get('/api', async (req, res) =>{
      }
  });
  
+ //Delete a Todo task
  Router.delete('/api/:id', async (req, res) => {
      const todo = await Todo.findById(req.params.id);
      try{
