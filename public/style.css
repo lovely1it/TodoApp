@@ -1,0 +1,9 @@
+.delete {
+    color: red
+}
+span {
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through
+}
