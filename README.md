@@ -6,3 +6,4 @@ What all this App can do:-
 3) hello hi how are you
 4)only added to check merger conflict
 //on branch new-feature-branch-1
+//commit ammend ammend
