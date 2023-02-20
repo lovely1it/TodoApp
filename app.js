@@ -15,6 +15,7 @@ mongoose.connect("mongodb://localhost:27017/TodoDB", {
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+//comment 1 for merge conflict
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
