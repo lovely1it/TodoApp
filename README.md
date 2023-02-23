@@ -8,3 +8,4 @@ What all this App can do:-
    4)only added to check merger conflict
    //on branch new-feature-branch-1
    //commit ammend ammend checking merge conflict editor
+   //ammend
