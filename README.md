@@ -8,3 +8,4 @@ What all this App can do:-
    //master
    //checking on master direct push will happen or not
    //push should not happen on master
+   //push don't
