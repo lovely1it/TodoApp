@@ -7,3 +7,4 @@ What all this App can do:-
 3. hello deleted laste step how do you feel
    //master
    //checking on master direct push will happen or not
+   //push should not happen on master
