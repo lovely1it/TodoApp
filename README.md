@@ -9,3 +9,4 @@ What all this App can do:-
    //on branch new-feature-branch-1
    //commit ammend ammend checking merge conflict editor
    //ammend
+   //ammend1
