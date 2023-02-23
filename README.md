@@ -10,3 +10,4 @@ What all this App can do:-
    //commit ammend ammend checking merge conflict editor
    //ammend
    //ammend1
+   //ammend-2
