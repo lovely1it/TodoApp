@@ -13,3 +13,5 @@ What all this App can do:- description about the to do app
    //lllllll
    //h
    //ammend
+   //git stash pop
+   //checking for commit ammend
