@@ -7,7 +7,7 @@ const Todo = require("./models/todo");
 const todoRouter = require("./routes/todos");
 
 //mongodb connection stablished comment
-//one line comment added by me
+//one line comment added by me which is lovely
 mongoose.connect("mongodb://localhost:27017/TodoDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -20,11 +20,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index"); // render index file
 });
 app.use("/todos", todoRouter);
 
 //server started
 app.listen(port, () => {
-  console.log("server started!");
+  console.log("server started!"); //logging server started
 });
