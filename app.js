@@ -10,7 +10,7 @@ const todoRouter = require("./routes/todos");
 mongoose.connect("mongodb://localhost:27017/TodoDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+}); //DB connection established
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -18,13 +18,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index"); // index file will render
 });
 app.use("/todos", todoRouter);
 
 //server started
 app.listen(port, () => {
-  console.log("server started!");
+  console.log("server started!"); // server will be start
 });
 //PR creation
-
