@@ -1,4 +1,4 @@
-Todo List App updated and changed -> small todo app created
+Todo List App updated and changed title of the app
 Todo list app using Node, Express, mongodDB and jQuery make sure it works
 What all this App can do:- description about the to do app
 
